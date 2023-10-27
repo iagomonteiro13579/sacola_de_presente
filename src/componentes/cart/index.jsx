@@ -11,6 +11,24 @@ export function numberToCurrency(
     currency,
   }).format(amount);
 }
+
+const copyPixToClipboard = (pixValue) => {
+  // Create a temporary input element to hold the Pix value
+  const tempInput = document.createElement("input");
+  tempInput.value = pixValue;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+
+  // Copy the Pix value to the clipboard
+  document.execCommand("copy");
+
+  // Remove the temporary input element
+  document.body.removeChild(tempInput);
+
+  // Inform the user that the Pix value has been copied (you can customize this part)
+  alert("Número do Pix copiado para a área de transferência");
+};
+
 const Cart = ({ selectedProduct }) => {
   return (
     <div className="payment-container">
@@ -37,6 +55,13 @@ const Cart = ({ selectedProduct }) => {
           alt="QRcode_cam"
         />
         <img className="qr-code" src={img} alt="QR Code" />
+        <div
+          onClick={() => copyPixToClipboard("68999347866")}
+          style={{ cursor: "pointer" }}
+        >
+          <h2>Pix: 68999347866</h2>
+          <p className="click_aq">Clique para copiar</p>
+        </div>
       </div>
     </div>
   );

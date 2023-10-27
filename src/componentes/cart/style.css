@@ -42,45 +42,46 @@
   font-size: 24px;
 }
 
-/* Estilos para dispositivos móveis */
+.click_aq {
+  font-size: 24px;
+}
 @media screen and (max-width: 768px) {
   .payment-container {
-    flex-direction: column; /* Alinhar verticalmente em telas menores */
+    flex-direction: column;
   }
 
   .left-content,
   .right-content {
-    width: 100%; /* Preencher toda a largura da tela */
-    height: auto; /* Ajustar a altura automaticamente */
-    border: none; /* Remover a borda em telas menores */
-    text-align: center; /* Centralizar o texto em telas menores */
-    padding: 10px; /* Reduzir o preenchimento */
+    width: 100%;
+    height: auto;
+    border: none;
+    text-align: center;
+    padding: 10px;
   }
 
   .left-content img {
-    height: 80px; /* Reduzir o tamanho da imagem */
+    height: 80px;
   }
 
   .right-content {
-    text-align: center; /* Centralizar o texto */
-    font-size: 14px; /* Reduzir o tamanho da fonte */
+    text-align: center;
+    font-size: 14px;
   }
 
   .QRcode_cam,
   .qr-code {
-    max-width: 100%; /* Redimensionar as imagens para caber na tela */
+    max-width: 100%;
   }
 
   .thank-you-text {
-    font-size: 24px; /* Reduzir o tamanho da fonte */
+    font-size: 24px;
   }
 
   .open-bank-app-text {
-    font-size: 20px; /* Reduzir o tamanho da fonte */
+    font-size: 20px;
   }
 }
 
-/* Estilos para dispositivos maiores (retorne ao layout original) */
 @media screen and (min-width: 769px) {
   .payment-container {
     flex-direction: row;
@@ -105,7 +106,7 @@
 
   .QRcode_cam,
   .qr-code {
-    max-width: 400px;
+    max-width: 380px;
   }
 
   .thank-you-text {
