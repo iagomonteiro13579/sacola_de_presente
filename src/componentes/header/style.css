@@ -1,0 +1,16 @@
+.header {
+  background-image: url("../../assets/background.jpg");
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding: 20px;
+  }
+}
