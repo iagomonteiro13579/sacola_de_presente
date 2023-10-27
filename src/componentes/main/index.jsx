@@ -1,5 +1,6 @@
 import Card from "../cards";
 import "./style.css";
+import imgCat from "../../assets/gatinho.png";
 
 function Main(props) {
   const cardsData = [
@@ -206,6 +207,22 @@ function Main(props) {
       imageSrc: "https://www.ahstatic.com/photos/9600_ho_00_p_1024x768.jpg",
       name: "Ajuda na diaria do hotel",
       value: 100,
+      buttonText: "Presentear",
+    },
+    {
+      id: 27,
+      imageSrc:
+        "https://blog.purepilates.com.br/wp-content/uploads/2017/02/pilates_idoso.jpg",
+      name: "Um mes de Pilates ",
+      value: 150,
+      buttonText: "Presentear",
+    },
+    {
+      id: 28,
+      imageSrc:
+        "https://media.gazetadopovo.com.br/2022/08/29121735/shutterstock_605469404-16x9-1-1-960x540.jpg",
+      name: "Um mes de ração pro michael ",
+      value: 39.9,
       buttonText: "Presentear",
     },
   ];
