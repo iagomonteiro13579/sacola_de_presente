@@ -17,6 +17,24 @@
   height: 1000px;
   width: 1000px;
 }
+
+.left-content p {
+  font-size: 1.5em;
+}
+
+.left-content button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.left-content button:hover {
+  background-color: #0056b3;
+}
+
 .left-content img {
   height: 100px;
 }

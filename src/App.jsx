@@ -6,12 +6,14 @@ import { useState } from "react";
 
 function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
-  console.log(selectedProduct);
   return (
     <div>
       <Header />
       {selectedProduct ? (
-        <Cart selectedProduct={selectedProduct} />
+        <Cart
+          selectedProduct={selectedProduct}
+          setSelectedProduct={setSelectedProduct}
+        />
       ) : (
         <Main setSelectedProduct={setSelectedProduct} />
       )}

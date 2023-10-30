@@ -1,5 +1,6 @@
 import "./style.css";
 import img from "../../assets/QRcode.jpg";
+import setSelectedProduct from "../../App.jsx";
 
 export function numberToCurrency(
   amount,
@@ -13,23 +14,19 @@ export function numberToCurrency(
 }
 
 const copyPixToClipboard = (pixValue) => {
-  // Create a temporary input element to hold the Pix value
   const tempInput = document.createElement("input");
   tempInput.value = pixValue;
   document.body.appendChild(tempInput);
   tempInput.select();
-
-  // Copy the Pix value to the clipboard
   document.execCommand("copy");
-
-  // Remove the temporary input element
   document.body.removeChild(tempInput);
-
-  // Inform the user that the Pix value has been copied (you can customize this part)
   alert("Número do Pix copiado para a área de transferência");
 };
 
-const Cart = ({ selectedProduct }) => {
+const Cart = ({ selectedProduct, setSelectedProduct }) => {
+  const handleBackButtonClick = () => {
+    setSelectedProduct(null);
+  };
   return (
     <div className="payment-container">
       <div className="left-content">
@@ -39,6 +36,9 @@ const Cart = ({ selectedProduct }) => {
           alt="PIX"
         />
         <p>Valor do Produto: {numberToCurrency(selectedProduct.value)}</p>
+        <button className="Back" onClick={handleBackButtonClick}>
+          Voltar
+        </button>
       </div>
       <div className="right-content">
         <h1 className="thank-you-text">

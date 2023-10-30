@@ -32,7 +32,7 @@ function Main(props) {
       id: 4,
       imageSrc:
         "https://www.sofacasa.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/3/03_1_.jpg",
-      name: "Sofa",
+      name: "Parcela Sofa",
       value: 100,
       buttonText: "Presentear",
     },
@@ -221,7 +221,7 @@ function Main(props) {
       id: 28,
       imageSrc:
         "https://media.gazetadopovo.com.br/2022/08/29121735/shutterstock_605469404-16x9-1-1-960x540.jpg",
-      name: "Um mes de ração pro michael ",
+      name: "Um mes de ração pro micael ",
       value: 39.9,
       buttonText: "Presentear",
     },

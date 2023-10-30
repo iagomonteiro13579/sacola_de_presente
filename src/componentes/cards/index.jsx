@@ -7,7 +7,6 @@ function Card({ setSelectedProduct, ...props }) {
   const handleClick = () => {
     setClickedId(props.id);
     setSelectedProduct(props);
-    console.log("ID do item clicado:", props.id);
   };
 
   const cardClassName = `card card-${props.id}`;
